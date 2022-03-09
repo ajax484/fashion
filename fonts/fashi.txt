@@ -1,0 +1,85 @@
+Fashionism Italic
+
+by Vít Èondák
+2003-2015
+
+Mail:	gunny(a)post.cz
+Web:	fonty.condak.cz
+FB:	facebook.com/GunnyHandwritingFont
+
+En Cz Sk De Fr Pl
+
+[ English License ]
+
+Free for personal or non-commercial use.
+In case you want to use the font for a commercial project please contact me to buy a license.
+
+If you think something in this font doesn't feel right please contact me.
+
+
+[ Èeská licence ]
+
+Zdarma pro osobní a nekomerèní užití.
+V pøípadì, že chcete font použít pro komerèní úèely, je nutné mì kontaktovat a koupit si licenci.
+
+Pokud ve fontu objevíte nìco, co by bylo vhodné opravit nebo doladit, tak mì prosím kontaktujte.
+
+---
+
+History
+
+0.954	2015-02-11
+	+ commabelow+... Eeng integral
+	+ Sigma Summa Ttheta delta gamma
+	* margin: zŸž
+
+0.953	2015-02-09
+	* reconstructed: 02569 ?<>{} section 
+	* tweaked: : ; ring ogonek bullet
+	+ ordmas ordfem epsilon Omega Theta beta pi tau sigma
+	+ pound (R)
+	* diacritic marks positions
+	+ kerning: V+ W+ Y+
+
+0.952++	2015-02-05
+	* reconstructed: CDGJOPQRSU
+	* reconstructed: abcdeghmnopqtuy
+	* reconstructed: $%& 38 cent currency
+
+0.952+	2015-02-05
+	* tweaked: s y (all small caps)
+
+0.952	2015-01-19
+	* tweaked: h m n u
+
+0.951	2014-12-06
+	* reconverted from regular
+	* tweaked: a b c d e g o p q r
+
+0.939	2014-09-26
+	* minor tweaks
+
+0.938	2014-02-07
+	* increased margins +25
+	* fixed 50 kerning pairs
+
+0.937	2014-01-14
+	+ kerning: F+vowels
+	+ ÁÉÍÓÚÝ
+	* unified spacing
+
+0.935	2013-12-26
+	* all basic characters
+	* redesigned: AGJSVW
+
+0.934	2013-12-24
+	+ C D
+	* redesigned: 0
+	+ acutes to small Czech vowels
+	+ many temporary characters
+
+0.933	2013-07-07
+	+ A B O
+
+0.932	2003-02-07
+	* S s

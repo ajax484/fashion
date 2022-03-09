@@ -1,0 +1,108 @@
+Fashionism Regular
+
+by VÌt »ond·k
+2003-2015
+
+Mail:	gunny(a)post.cz
+Web:	fonty.condak.cz
+FB:	facebook.com/GunnyHandwritingFont
+
+En Cz Sk De Fr Pl
+
+[ English License ]
+
+Free for personal or non-commercial use.
+In case you want to use the font for a commercial project please contact me to buy a license.
+
+If you think something in this font doesn't feel right please contact me.
+
+
+[ »esk· licence ]
+
+Zdarma pro osobnÌ a nekomerËnÌ uûitÌ.
+V p¯ÌpadÏ, ûe chcete font pouûÌt pro komerËnÌ ˙Ëely, je nutnÈ mÏ kontaktovat a koupit si licenci.
+
+Pokud ve fontu objevÌte nÏco, co by bylo vhodnÈ opravit nebo doladit, tak mÏ prosÌm kontaktujte.
+
+---
+
+History
+
+0.954	2015-02-11
+	+ commabelow+... Eeng integral
+	+ Sigma Summa Ttheta delta gamma
+	* margin: züû
+
+0.953	2014-11-19
+	+ epsilon sigma dieresistonos bullet Omega Theta
+	+ kerning: V+ W+ Y+
+
+0.952	2014-11-18
+	+ cedilla+... Oo-ogonek Oo-dot pound 
+	* beta pi tau
+	* Õ < > , ; : { }
+	* clean up
+
+0.951	2014-11-17
+	+ commaabove+... ºÂ & % perthousand curr
+	+ Lslash lshlash < > << >> Xi omega
+	* t Ôù Ldot ldot
+
+0.950	2014-11-15
+	+ breve+...
+	* +-* germandbls
+	+ divide kappa eta rho cent mu upsilon
+
+0.949	2014-11-14
+	+ (c) OE AE Gamma Delta
+	* @ J
+	* reconstructed: 24
+	* fixed: AVW
+
+0.948	2014-11-13
+	* reconstructed: 1 Z logicalnot
+	* margin: .,:; middot doaccent
+	* ST |
+	* diacritics at 1150
+	+ Pi $ yen
+
+0.947+	2014-11-13
+	* reconstructed: 7
+
+0.947	2014-10-05
+	* modified height: 378 bhkl
+	+()/\ Euro quotes ae oe thorn Thorn
+	+ macron+...
+	* s
+
+0.946	2014-10-04
+	* reconstructed: ? MQXY x
+
+0.945	2014-10-02
+	* modified: R
+	* reconstructed: N VW
+
+0.944	2014-10-01
+	* reconstructed: z
+
+0.943	2014-09-30
+	* redesigned: 5 K k
+
+0.942	2014-09-28
+	* redesigned: AVW
+	* margins: CDOQ
+
+0.941	2014-09-27
+	* revised kerning
+	* redesigned: S
+	+ tilde+...
+	+ dieresis+...
+	+ ogonek+...
+
+0.940	2014-09-26
+	* many fixes
+	+ Czech discritics
+
+0.939	2014-09-25
+	* converted from italic
+	* small letters reconstructed from scratch
