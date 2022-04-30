@@ -13,6 +13,7 @@
 
 <body>
     <div id="main-container">
+
         <header class="navbar">
             <div class="logo">
                 <h1 class="logo-text">
@@ -20,16 +21,41 @@
                 </h1>
             </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">
+            <a href="javascript:void(0);" class="icon" id="navbar-toggler">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <div class="searchbar navbar__smd">
-                <input type="text" name="searchBox" id="searchbox" placeholder="search..."><button
-                    class="searchbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
+            <ul class="nav-links navbar__smd">
+                <li class="nav-link">
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="">
+                        Pages
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="">
+                        Shop
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="">
+                        Blog
+                    </a>
+                </li>
+            </ul>
 
             <div class="icons-bar navbar__smd">
+                <div class='search-box navbar__smd'>
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-text" type="text" placeholder="Search">
+                </div>
+
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <i class="fa fa-heart" aria-hidden="true"></i>
                 <span class="icon__notification">
@@ -59,8 +85,8 @@
                             <i class="fas fa-shipping-fast"></i>
                         </div>
                         <div class="info-box__content">
-                            <h1>FREE SHIPPING & RETURN</h1>
-                            <p>Free shipping on all orders over $99</p>
+                            <h2>FREE SHIPPING & RETURN</h2>
+                            <h3 class="text-muted" class="text-muted">Free shipping on all orders over $99</h3>
                         </div>
                     </div>
                     <div class="info-box">
@@ -68,8 +94,8 @@
                             <i class="fas fa-dollar-sign"></i>
                         </div>
                         <div class="info-box__content">
-                            <h1>MONEY BACK GUARANTEE</h1>
-                            <p>100% money back guarantee</p>
+                            <h2>MONEY BACK GUARANTEE</h2>
+                            <h3 class="text-muted" class="text-muted">100% money back guarantee</h3>
                         </div>
                     </div>
                     <div class="info-box">
@@ -77,8 +103,8 @@
                             <i class="fas fa-headphones-alt"></i>
                         </div>
                         <div class="info-box__content">
-                            <h1>ONLINE SUPPORT 24/7</h1>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <h2>ONLINE SUPPORT 24/7</h2>
+                            <h3 class="text-muted" class="text-muted">Lorem ipsum dolor sit amet</h3>
                         </div>
                     </div>
                 </div>
@@ -94,14 +120,12 @@
                             <div class="card__image category__image">
                                 <img src="./img/pexels-ron-lach-8346024.jpg" alt="">
                             </div>
-                            <div class="card__overlay-container">
-                                <div class="card__overlay">
-                                    <p>Men's</p>
-                                    <div class="overlay__hidden">
-                                        <p>Men's clothes</p>
-                                        <p>Men's shoes</p>
-                                        <p>Men's Accessories</p>
-                                    </div>
+                            <div class="card__overlay">
+                                <h2>Men's</h2>
+                                <div class="overlay__hidden">
+                                    <h3>Men's clothes</h3>
+                                    <h3>Men's shoes</h3>
+                                    <h3>Men's Accessories</h3>
                                 </div>
                             </div>
                         </div>
@@ -110,30 +134,26 @@
                             <div class="card__image category__image">
                                 <img src="./img/Depositphotos_190610446_S.jpg" alt="">
                             </div>
-                            <div class="card__overlay-container">
-                                <div class="card__overlay">
-                                    <p>Women's</p>
-                                    <div class="overlay__hidden">
-                                        <p>Women's clothes</p>
-                                        <p>Women's shoes</p>
-                                        <p>Women's Accessories</p>
-                                    </div>
+                            <div class="card__overlay">
+                                <h2>Women's</h2>
+                                <div class="overlay__hidden">
+                                    <h3>Women's clothes</h3>
+                                    <h3>Women's shoes</h3>
+                                    <h3>Women's Accessories</h3>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card category__card">
                             <div class="card__image category__image">
-                                <img src="./img/pexels-ron-lach-8346024.jpg" alt="">
+                                <img src="./img/pexels-alex-green-5699504.jpg" alt="">
                             </div>
-                            <div class="card__overlay-container">
-                                <div class="card__overlay">
-                                    <p>Accessories</p>
-                                    <div class="overlay__hidden">
-                                        <p>Watches</p>
-                                        <p>Shoes</p>
-                                        <p>Bags</p>
-                                    </div>
+                            <div class="card__overlay">
+                                <h2>Accessories</h2>
+                                <div class="overlay__hidden">
+                                    <h3>Watches</h3>
+                                    <h3>Shoes</h3>
+                                    <h3>Bags</h3>
                                 </div>
                             </div>
                         </div>
@@ -177,9 +197,9 @@
                                 <img src="./img/mens/boxy-tee (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Chanel</p>
-                                <h3>Boxy fit T-shirt</h3>
-                                <p>$470.00</p>
+                                <h3 class="text-muted">Chanel</h3>
+                                <h2>Boxy fit T-shirt</h2>
+                                <h3 class="text-muted">$470.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -206,9 +226,9 @@
                                 <img src="./img/mens/cotton-shirt (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Chanel</p>
-                                <h3>cotton voile shirt</h3>
-                                <p>$165.00</p>
+                                <h3 class="text-muted">Chanel</h3>
+                                <h2>cotton voile shirt</h2>
+                                <h3 class="text-muted">$165.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -230,9 +250,9 @@
                                 <img src="./img/mens/knit-cardigan (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Chanel</p>
-                                <h3>knit cardigan</h3>
-                                <p>$165.00</p>
+                                <h3 class="text-muted">Chanel</h3>
+                                <h2>knit cardigan</h2>
+                                <h3 class="text-muted">$165.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -254,9 +274,9 @@
                                 <img src="./img/mens/skinny-jeans (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Dolce & Gabbana</p>
-                                <h3>Skinny Jeans</h3>
-                                <p>$335.00</p>
+                                <h3 class="text-muted">Dolce & Gabbana</h3>
+                                <h2>Skinny Jeans</h2>
+                                <h3 class="text-muted">$335.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -288,9 +308,9 @@
                                 <img src="./img/womens/belted-chinos (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Lacoste</p>
-                                <h3>belted chino trousers polo</h3>
-                                <p>$320.00</p>
+                                <h3 class="text-muted">Lacoste</h3>
+                                <h2>belted chino trousers polo</h2>
+                                <h3 class="text-muted">$320.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -313,9 +333,9 @@
                                 <img src="./img/womens/jersey-graphic (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Dolce & Gabbana</p>
-                                <h3>Jersey Graphic Tee Dolce</h3>
-                                <p>$171.00</p>
+                                <h3 class="text-muted">Dolce & Gabbana</h3>
+                                <h2>Jersey Graphic Tee Dolce</h2>
+                                <h3 class="text-muted">$171.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -347,9 +367,9 @@
                             </div>
 
                             <div class="product-content">
-                                <p>Levi's</p>
-                                <h3>sweater with slogan</h3>
-                                <p>$210.00</p>
+                                <h3 class="text-muted">Levi's</h3>
+                                <h2>sweater with slogan</h2>
+                                <h3 class="text-muted">$210.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -373,9 +393,9 @@
                             </div>
 
                             <div class="product-content">
-                                <p>Zara</p>
-                                <h3>Grown with t-shirt with print</h3>
-                                <p>$335.00</p>
+                                <h3 class="text-muted">Zara</h3>
+                                <h2>Grown with t-shirt with print</h2>
+                                <h3 class="text-muted">$335.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -417,9 +437,9 @@
                                     class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Chanel</p>
-                                <h3>watch with faux leather strap</h3>
-                                <p>$165.00</p>
+                                <h3 class="text-muted">Chanel</h3>
+                                <h2>watch with faux leather strap</h2>
+                                <h3 class="text-muted">$165.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -451,9 +471,9 @@
                                     class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Dior</p>
-                                <h3>Retro sunglasses</h3>
-                                <p>$350.00</p>
+                                <h3 class="text-muted">Dior</h3>
+                                <h2>Retro sunglasses</h2>
+                                <h3 class="text-muted">$350.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -475,9 +495,9 @@
                                 <img src="./img/accessories/oxford-purse (2).jpeg" alt="" class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Chanel</p>
-                                <h3>oxford purse</h3>
-                                <p>$210.00</p>
+                                <h3 class="text-muted">Chanel</h3>
+                                <h2>oxford purse</h2>
+                                <h3 class="text-muted">$210.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -501,9 +521,9 @@
                                     class="product-image__second">
                             </div>
                             <div class="product-content">
-                                <p>Dior</p>
-                                <h3>Men's leather sneakers</h3>
-                                <p>$430.00</p>
+                                <h3 class="text-muted">Dior</h3>
+                                <h2>Men's leather sneakers</h2>
+                                <h3 class="text-muted">$430.00</h3>
                                 <button class="btn-cart">Add to cart</button>
                             </div>
                         </div>
@@ -515,29 +535,130 @@
                 <div class="blog">
                     <div class="header header__blog" data-aos="fade-up">
                         <h1>Read our blogs</h1>
-                        <p>Daily news posts</p>
+                        <h3>Daily news posts</h3>
                     </div>
 
                     <div class="cards" data-aos="fade-up">
+
                         <div class="card card__blog">
-                            <div class="card__image blog__image">
-                                <img src="./img/pexels-ańdy-6401445.jpg" alt="">
+
+                            <div class="overlay blog-overlay">
+                                <div class="blog-overlay__header">
+                                    <div class="blog-overlay__date">
+                                        17
+                                        <br>
+                                        May
+                                    </div>
+                                    <div class="blog-overlay__title">
+                                        <h3>
+                                            Bridal Guide
+                                        </h3>
+                                        (Tips and Tricks)
+                                    </div>
+                                </div>
+
+                                <div class="blog-overlay__body">
+                                    <p>
+                                        Comprehensive bridal guide to all things wedding, offering insights across
+                                        planning, dresses, beauty, registry, and honeymoons. Daily posts and magazine
+                                        excerpts feature what’s hot, what’s new, and what’s trending.
+                                    </p>
+                                </div>
+
+                                <div class="blog-overlay__link">
+                                    Read More...
+                                </div>
                             </div>
-                        </div>
-                        <div class="card card__blog">
-                            <div class="card__image blog__image">
-                                <img src="./img/pexels-muhammad-renaldi-11245615.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="card card__blog">
+
                             <div class="card__image blog__image">
                                 <img src="./img/pexels-madelin-berry-11238332.jpg" alt="">
                             </div>
+
                         </div>
+
+                        <div class="card card__blog">
+                            <div class="overlay blog-overlay">
+                                <div class="blog-overlay__header">
+                                    <div class="blog-overlay__date">
+                                        25
+                                        <br>
+                                        Aug
+                                    </div>
+                                    <div class="blog-overlay__title">
+                                        <h3>
+                                            Gangsta Fashion
+                                        </h3>
+                                        (the rise of the hood)
+                                    </div>
+                                </div>
+
+                                <div class="blog-overlay__body">
+                                    <p>
+                                        Gangsta fashion has of recent been brought back to the forefront due to the
+                                        exploits of the hip hop industry, the resurgence pushed mostly by the likes of
+                                        Drake...
+                                    </p>
+                                </div>
+
+                                <div class="blog-overlay__link">
+                                    Read More...
+                                </div>
+                            </div>
+
+                            <div class="card__image blog__image">
+                                <img src="./img/pexels-ańdy-6401445.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="card card__blog">
+
+                            <div class="overlay blog-overlay">
+                                <div class="blog-overlay__header">
+                                    <div class="blog-overlay__date">
+                                        06
+                                        <br>
+                                        Dec
+                                    </div>
+                                    <div class="blog-overlay__title">
+                                        <h3>
+                                            Indo-Fashion
+                                        </h3>
+                                        (creme de la crop)
+                                    </div>
+                                </div>
+
+                                <div class="blog-overlay__body">
+                                    <p>
+                                        Ecclectic, fun and creative, Jarkarta takes on a new style with the turn of a
+                                        decade, mixing the right balance of youthful exuberance ushered in by the new
+                                        generation and 70s classy vintage inspired by the old generation
+                                    </p>
+                                </div>
+
+                                <div class="blog-overlay__link">
+                                    Read More...
+                                </div>
+                            </div>
+
+                            <div class="card__image blog__image">
+                                <img src="./img/pexels-muhammad-renaldi-11245615.jpg" alt="">
+                            </div>
+
+                        </div>
+
                     </div>
+
                 </div>
+
             </section>
+
+            <section id="newsletter">
+
+            </section>
+
         </main>
+
     </div>
 
     <div id="loader">
@@ -548,6 +669,7 @@
     </div>
 
     <script src="./minified/gsap.min.js"></script>
+    <script src="./minified/ScrollTrigger.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
