@@ -21,7 +21,6 @@ tlLoader
 
 //remve preloader and display main page
 const removeLoader = () => {
-    console.log('Removing loader');
     tlLoader.repeat(0);
     tlMain.addLabel('opswitch')
         .to(main, { duration: 1, opacity: 1, ease: Power1.easeInOut }, 'opswitch')
@@ -72,9 +71,16 @@ const categoryCard = document.querySelectorAll('.category__card');
 categoryCard.forEach((card) => {
     const hoverCardTl = gsap.timeline({ paused: true, ease: "Power1.easeIn" })
         .addLabel('hoverCard')
-        .to(card.querySelector('.card__overlay'), { y: '-50%', translateY: '50%', duration: .9 }, 'hoverCard') //card moves up
+        .to(card.querySelector('.card__overlay'), { top: '50%', duration: .9 }, 'hoverCard') //card moves up
         .fromTo(card.querySelector('img'), .7, { scale: 1, filter: 'brightness(1)' }, { scale: 1.5, filter: 'brightness(0.6)' }, 'hoverCard') //image zooms in
         .to(card.querySelector('.overlay__hidden'), { height: 'auto', opacity: .7, duration: .9 }, 'hoverCard+=.1') //hidden display is made visible
+
+    const hoverCardMobTl = gsap.timeline({ paused: true, ease: "Power1.easeIn" })
+        .addLabel('hoverCard')
+        .to(card.querySelector('.card__overlay'), { bottom: '-50%', height: '100%', duration: .9 }, 'hoverCard') //card moves up
+        .fromTo(card.querySelector('img'), .7, { scale: 1, filter: 'brightness(1)' }, { scale: 1.5, filter: 'brightness(0.6)', duration: .9 }, 'hoverCard') //image zooms in
+        .set(card.querySelector('.overlay__hidden'), { autoAlpha: 1 }, 'hoverCard+=.1') //hidden display is made visible
+        .to(card.querySelector('.overlay__hidden'), { height: 'auto', duration: .2 }, 'hoverCard+=.7') //hidden display is made visible
 
     card.addEventListener('mouseenter', () => {
         if (window.innerWidth > 425) {
@@ -88,46 +94,38 @@ categoryCard.forEach((card) => {
         }
     })
 
-    //scrolltrigger overlay (for smaller screens)
+    //animation for smaller screens
     if (('ontouchstart' in document.documentElement && /mobi/i.test(navigator.userAgent))) {
-        ScrollTrigger.create({
-            trigger: card,
-            start: "top-=20% 20%",
-            onEnter: () => hoverCardTl.play(),
-            onLeave: () => hoverCardTl.reverse()
+        let clicked = false;
+
+        card.addEventListener('click', () => {
+            if (!clicked) {
+                hoverCardMobTl.play()
+                clicked = !clicked
+            } else {
+                hoverCardMobTl.reverse()
+                clicked = !clicked
+            }
         })
     }
 })
 
 //remove label from product on click
-const productImages = document.querySelectorAll('.product-image');
+const cardProducts = document.querySelectorAll('.card.product');
 
-productImages.forEach((productImage) => {
+cardProducts.forEach((cardProduct) => {
     const imgSwitchTl = gsap.timeline({ paused: true })
         .addLabel('start')
-        .set(productImage.querySelector('.product-image__second'), { autoAlpha: 1 }, 'start+=.25')
-        .set(productImage.querySelector('.product-image__first'), { autoAlpha: 0 }, 'start+=.25')
-        .to(productImage.querySelector('.image__hidden-display'), { duration: .5, autoAlpha: 1 }, 'start')
-        .from(productImage.querySelector('.image__hidden-display'), { duration: .5, top: '60%' }, 'start')
+        .set(cardProduct.querySelector('.product-image__second'), { autoAlpha: 1 }, 'start+=.25')
+        .set(cardProduct.querySelector('.product-image__first'), { autoAlpha: 0 }, 'start+=.25')
+        .to(cardProduct.querySelector('.image__hidden-display'), { duration: .5, autoAlpha: 1 }, 'start')
+        .staggerFromTo(cardProduct.querySelectorAll('.hidden-display__icon'), .5, { y: '100%' }, { y: '0' }, 0.2, 'start')
+        .staggerTo(cardProduct.querySelectorAll('.hidden-display__icon'), .5, { autoAlpha: 1 }, 0.2, 'start')
 
-    productImage.addEventListener('mouseenter', () => {
-        console.log('product');
-        imgSwitchTl.play();
-    })
+    cardProduct.addEventListener('mouseenter', () => { if (window.innerWidth > 425) { imgSwitchTl.play() } })
 
-    productImage.addEventListener('mouseleave', () => {
-        imgSwitchTl.reverse();
-    })
+    cardProduct.addEventListener('mouseleave', () => { if (window.innerWidth > 425) { imgSwitchTl.reverse() } })
 
-    //scrolltrigger overlay (for smaller screens)
-    if (('ontouchstart' in document.documentElement && /mobi/i.test(navigator.userAgent))) {
-        ScrollTrigger.create({
-            trigger: productImage,
-            start: "top-=20% 20%",
-            onEnter: () => imgSwitchTl.play(),
-            onLeave: () => imgSwitchTl.reverse()
-        })
-    }
 })
 
 
