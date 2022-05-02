@@ -722,6 +722,15 @@ footer {
     font-size: 1.25em;
 }
 
+.sign a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sign a:hover {
+    font-weight: bolder;
+}
+
 #loader {
     position: fixed;
     top: 0;
